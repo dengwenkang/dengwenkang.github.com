@@ -19,7 +19,7 @@
 				<p class="psTitle cen">Deng Wenkang</p>
 				<p class="motto animated rubberBand">不忘初心 方得始终</p>
 				<p class="bTit">嗨，我是邓文康，一名JAVA工程师，现居北京，正在修行探求......</p>
-				<p class="nav"><a href="#resume">经历</a><a href="#case">项目</a><a href="#about">关于</a></p>
+				<p class="nav"><a href="#"  onclick="onc(0);">经历</a><a href="#"  onclick="onc(1);">项目</a><a href="#"  onclick="onc(2);">关于</a></p>
 				<i class="icon animated flash infinite"></i>
 			</div>
 			<div class="section" id="resume">
@@ -46,6 +46,9 @@
 //  				}
     			});
 			});
+			function onc(n){
+				$('#fp-nav ul li:eq('+n+') a').addClass('active').siblings().removeClass("active");
+			}
 		</script>
 	</body>
 </html>
