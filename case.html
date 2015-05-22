@@ -111,3 +111,42 @@
 		}		
 	}
 </script>
+
+<script>
+(function(){
+	var main = document.getElementById("index");
+	if(document.attachEvent){ 
+		document.attachEvent('onmousewheel',scrollFunc); 
+	}else if(document.addEventListener){ 
+		document.addEventListener('DOMMouseScroll',scrollFunc,false); 
+	}
+	function scrollFunc(e){
+		var ev = e || window.event;
+		if(ev.wheelDelta){
+			if(ev.wheelDelta>0){
+				//向上
+				scroll(0);
+			}else{
+				//向下
+				scroll(1);
+			}	
+		}else if(ev.detail){
+			if(ev.detail>0){
+				//向下
+				scroll(1);
+			}else{
+				//向上
+				scroll(0);
+			}
+		}
+	}
+	function scroll(type){
+          if(type==0){
+				parent.jutmp(1);
+			}else{
+				parent.jutmp(3);
+			}
+		
+	}
+})();
+</script>
