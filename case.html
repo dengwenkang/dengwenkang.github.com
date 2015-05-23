@@ -159,21 +159,21 @@
 			}
 		}
 	}
-	var temp;
+	var temp1;
 	function scroll(type){
 		if(type==1){
-			container.scrollTop=main.scrollTop+50;
+			container.scrollTop=container.scrollTop+50;
 		}else if(type==0){
-			container.scrollTop=main.scrollTop-50;
+			container.scrollTop=container.scrollTop-50;
 		}
-		if(temp==main.scrollTop){
-			if(temp==0){
+		if(temp1==container.scrollTop){
+			if(temp1==0){
 				parent.jutmp(1);
 			}else{
 				parent.jutmp(3);
 			}
 		}
-		temp =main.scrollTop;
+		temp1 =container.scrollTop;
 		
 	}
 })();
