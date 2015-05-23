@@ -9,7 +9,7 @@
 	</head>
 	<body style="background:url('img/section9.jpg') no-repeat scroll 0% 0% / 100% 100% transparent;">
 		<div id="index">
-			<div class="main case">
+			<div id="index_main" class="main case">
 				<div id="tabMain">
 					<ul>
 						<li class="cur">生源闪购</li>
@@ -115,6 +115,11 @@
 <script>
 (function(){
 	var main = document.getElementById("index");
+	var container=document.getElementById("index_main");
+	container.style.height=parseInt(document.documentElement.clientHeight)*0.9+"px";
+	main.style.paddingBottom=container.style.paddingTop = parseInt(document.documentElement.clientHeight)*0.05+"px"
+	
+	
 	if(document.attachEvent){ 
 		document.attachEvent('onmousewheel',scrollFunc); 
 	}else if(document.addEventListener){ 
