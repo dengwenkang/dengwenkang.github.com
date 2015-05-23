@@ -20,7 +20,7 @@
 						<li>杭州亮点投资项目</li>
 						<li>北京海科融通支付通项目</li>
 					</ul>
-					<div class="container">
+					<div class="container" id="container">
 						<div class="content cur">
 							<h3>杭州海兴电力支付系统</h3>
 							<p style="text-align: center;"><img src="img/hx.jpg"></p>
@@ -129,10 +129,11 @@
 <script>
 (function(){
 	var main = document.getElementById("index");
-	var container=document.getElementById("index_main");
-	container.style.height=parseInt(document.documentElement.clientHeight)*0.9+"px";
-	main.style.paddingBottom=main.style.paddingTop = parseInt(document.documentElement.clientHeight)*0.05+"px"
+	var index_main=document.getElementById("index_main");
+	index_main.style.height=parseInt(document.documentElement.clientHeight)*0.9+"px";
+	main.style.paddingBottom=main.style.paddingTop = parseInt(document.documentElement.clientHeight)*0.05+"px";
 	
+	var container=document.getElementById("container");
 	
 	if(document.attachEvent){ 
 		document.attachEvent('onmousewheel',_scrollFunc); 
