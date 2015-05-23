@@ -159,12 +159,21 @@
 			}
 		}
 	}
+	var temp;
 	function scroll(type){
-          if(type==0){
+		if(type==1){
+			main.scrollTop=main.scrollTop+50;
+		}else if(type==0){
+			main.scrollTop=main.scrollTop-50;
+		}
+		if(temp==main.scrollTop){
+			if(temp==0){
 				parent.jutmp(1);
 			}else{
 				parent.jutmp(3);
 			}
+		}
+		temp =main.scrollTop;
 		
 	}
 })();
