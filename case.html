@@ -135,32 +135,32 @@
 	
 	
 	if(document.attachEvent){ 
-		document.attachEvent('onmousewheel',scrollFunc); 
+		document.attachEvent('onmousewheel',_scrollFunc); 
 	}else if(document.addEventListener){ 
-		document.addEventListener('DOMMouseScroll',scrollFunc,false); 
+		document.addEventListener('DOMMouseScroll',_scrollFunc,false); 
 	}
-	function scrollFunc(e){
+	function _scrollFunc(e){
 		var ev = e || window.event;
 		if(ev.wheelDelta){
 			if(ev.wheelDelta>0){
 				//向上
-				scroll(0);
+				_scroll(0);
 			}else{
 				//向下
-				scroll(1);
+				_scroll(1);
 			}	
 		}else if(ev.detail){
 			if(ev.detail>0){
 				//向下
-				scroll(1);
+				_scroll(1);
 			}else{
 				//向上
-				scroll(0);
+				_scroll(0);
 			}
 		}
 	}
 	var temp1;
-	function scroll(type){
+	function _scroll(type){
 		if(type==1){
 			container.scrollTop=container.scrollTop+50;
 		}else if(type==0){
