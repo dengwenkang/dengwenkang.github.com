@@ -18,7 +18,7 @@ body {
 }
 .main {
 	margin: 0 auto;
-	max-width: 600px;
+	max-width: 1000px;
 	overflow: hidden;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 }
@@ -127,7 +127,7 @@ body {
 	background: #ccc;
 }
 #tabMain ul {
-	width: 25%;
+	width: 28%;
 	float: left;
 }
 #tabMain ul li {
@@ -150,7 +150,7 @@ body {
 }
 #tabMain .container {
 	float: right;
-	width: 75%;
+	width: 72%;
 	height: 550px;
 	padding: 5px;
 	box-sizing: border-box;
