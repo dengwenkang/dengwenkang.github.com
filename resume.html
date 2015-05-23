@@ -8,9 +8,10 @@
 <link rel="stylesheet" type="text/css" href="css/component.css" />
 
 </head>
-<body>
-<div class="container">
-	<div id="container_main" class="main" style="overflow:hidden;margin-top:30px;height:580px">
+<body style="background:url('img/section4.jpg') no-repeat scroll 0% 0% / 100% 100% transparent;">
+<div class="container" id="container">
+	<div id="container_main" class="main" style="overflow:hidden;">
+	 
 		<ul class="cbp_tmtimeline">
 			<li>
 				<time class="cbp_tmtime"><span>2011-至今</span></time>
@@ -49,8 +50,14 @@
 </div>
 <script>
 (function(){
+	//alert(document.documentElement.clientHeight);
 	var main = document.getElementById("container_main");
-	main.style.height= document.body.clientHeight+"px";
+	var container=document.getElementById("container");
+	//main.style.height= document.body.clientHeight+"px";
+	main.style.height=parseInt(document.documentElement.clientHeight)*0.9+"px";
+	//main.style.marginTop = parseInt(document.documentElement.clientHeight)*0.05+"px";
+	container.style.paddingBottom=container.style.paddingTop = parseInt(document.documentElement.clientHeight)*0.05+"px"
+	
 	if(document.attachEvent){ 
 		document.attachEvent('onmousewheel',scrollFunc); 
 	}else if(document.addEventListener){ 
