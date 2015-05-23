@@ -14,7 +14,7 @@ body {
 /*index*/
 
 #index {
-	padding: 5%;
+	padding: 3%;
 }
 .main {
 	margin: 0 auto;
@@ -127,7 +127,7 @@ body {
 	background: #ccc;
 }
 #tabMain ul {
-	width: 30%;
+	width: 25%;
 	float: left;
 }
 #tabMain ul li {
@@ -150,7 +150,7 @@ body {
 }
 #tabMain .container {
 	float: right;
-	width: 70%;
+	width: 75%;
 	height: 550px;
 	padding: 5px;
 	box-sizing: border-box;
