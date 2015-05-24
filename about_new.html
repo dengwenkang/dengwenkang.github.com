@@ -143,5 +143,43 @@
 				<p>&copy; Copyright &copy; 2015.All rights reserved.</p>
 			</div>
 		</div>
+<script>
+(function(){
+	var pagewrap = document.getElementById("pagewrap");
+	if(document.attachEvent){ 
+		document.attachEvent('onmousewheel',scrollFunc1); 
+	}else if(document.addEventListener){ 
+		document.addEventListener('DOMMouseScroll',scrollFunc1,false); 
+	}
+	function scrollFunc1(e){
+		var ev = e || window.event;
+		if(ev.wheelDelta){
+			if(ev.wheelDelta>0){
+				//向上
+				scroll(0);
+			}else{
+				//向下
+				scroll(1);
+			}	
+		}else if(ev.detail){
+			if(ev.detail>0){
+				//向下
+				scroll(1);
+			}else{
+				//向上
+				scroll(0);
+			}
+		}
+	}
+	function scroll(type){
+          if(type==0){
+				parent.jutmp(2);
+			}else{
+				//parent.jutmp(0);
+			}
+		
+	}
+})();
+</script>
 </body>
 </html>
