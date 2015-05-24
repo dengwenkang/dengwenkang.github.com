@@ -22,7 +22,7 @@
 					<tr><td style="text-align: right;width: 10%;">行业类别：</td><td style="text-align: left;">互联网/第三方支付</td></tr>
 					<tr><td style="text-align: right;">工作描述：</td><td style="text-align: left;">参与项目的需求分析、详细设计、数据库设计、编码(JAVA\XML)、测试和部署工作；</td></tr>
 					<tr><td style="text-align: right;">&nbsp;</td><td style="text-align: left;">
-					1、负责对接的银行有：B2B(光大银行、兴业银行、中兴银行、平安银行、南非联合银行)，B2C（中国农业银行、中国银行、杭州银行），第三方(联通沃支付、连连支付、银联支付)；</br>2、负责项目有：杭州海兴电力支付系统、深圳华融互联网支付项目+手机支付项目、上海畅付通手机支付系统；参与项目有：上海斯迪尔大宗商品支付网关系统、北京银通讯互联网支付系统、杭州亮点投资项目、北京海科融通支付通项目；<br/>3、通过参与或负责项目，熟练掌握第三方公司支付、科目记账、商户清结算、个人用户常规业务(充值、提现、转账等)、商户和银行对接相关业务，并支持过申牌工作；
+					1、项目中累计对接过的银行有：B2B(建设银行、光大银行、中信银行、中国银行、平安银行、南非联合银行)，B2C（中国农业银行、中国银行、杭州银行），第三方支付(联通沃支付、连连支付、银联支付)等。</br>2、主导项目有：<a href="javascript:viod(0);" onclick="resume(0);">杭州海兴电力支付系统</a>、<a href="javascript:viod(0);" onclick="resume(1);">深圳华融互联网支付项目+手机支付项目</a>、<a href="javascript:viod(0);" onclick="resume(2);">上海畅付通手机支付系统</a>, 参与项目有：<a href="javascript:viod(0);" onclick="resume(3);">上海斯迪尔大宗商品支付网关系统</a>、<a href="javascript:viod(0);" onclick="resume(4);">北京银通讯互联网支付系统</a>、<a href="javascript:viod(0);" onclick="resume(4);">杭州亮点投资项目</a>、<a href="javascript:viod(0);" onclick="resume(5);">北京海科融通支付通项目</a>。<br/>3、通过参与项目，熟练掌握了第三方公司互联网支付、手机支付、科目记账、商户清结算、银行对账、个人用户常规业务(充值、提现、转账等)、商户和银行对接相关业务。<br/>4.了解第三方支付公司申牌、运营、风险控制、反洗钱、备付金管理等业务。
 					</td></tr>
 					</table>
 				</div>
@@ -32,7 +32,14 @@
 				<div class="cbp_tmicon cbp_tmicon-screen"></div>
 				<div class="cbp_tmlabel">
 					<h2>河南博思特信息技术有限公司</h2>
-					<p>行业类别：互联网/电子商务<br/>工作描述：负责网站页面设计、前端开发，以及动态效果的实现。</br>1、网页UI设计，图片处理<br/>2、根据需求开发符合W3C标准的html页面、css样式文件和Javascript脚本；<br/>3、项目zhu；</p>
+					<table width="100%">
+					<tr><td style="text-align: right;width: 10%;">行业类别：</td><td style="text-align: left;">互联网/ OA</td></tr>
+					<tr><td style="text-align: right;">工作描述：</td><td style="text-align: left;">负责对分配的模块进行设计开发。</td></tr>
+					<tr><td style="text-align: right;">&nbsp;</td><td style="text-align: left;">
+					1、基于 Struts2.0+Spring2.2+hibernate2.8 集成框架进行开发，负责薪酬标准管理、薪酬发放管理模块开发工作。<br/>2、通过项目的开发，养成了良好的编码规范和团队意识。
+					</td></tr>
+					</table>
+					
 				</div>
 			</li>
 		</ul>
@@ -91,6 +98,24 @@
 		
 	}
 })();
+	function resume(v){
+		
+		var oTab=parent.frames['case'].document.getElementById('tabMain');
+		var aLi=oTab.getElementsByTagName('ul')[0].getElementsByTagName("li");
+		var oDivs=oTab.getElementsByTagName("div")[0].getElementsByTagName("div");
+		
+		for(var i=0; i<aLi.length; i++){
+			aLi[i].index=i;
+			if(i==v){
+				aLi[i].className="cur";
+				oDivs[i].className="content cur";
+			}else{
+				aLi[i].className="";			
+				oDivs[i].className="content";
+			}
+		}
+		parent.jutmp(2);
+	}
 </script>	
 
 </body>
