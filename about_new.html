@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<title>Cardex - Personal site template</title>
+		<link rel="stylesheet" type="text/css" href="style.css" media="screen">
+		<!--[if IE]>
+			<link rel="stylesheet" type="text/css" href="ie.css" media="screen">
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="lightbox.css" media="screen">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.lightbox-0.5.pack.js"></script>
+		<script type="text/javascript" src="js/cufon-yui.js"></script>
+		<script type="text/javascript" src="js/Desyrel_400.font.js"></script>
+		
+		<!-- Cufon text replacement -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				Cufon.replace('#about .right ul li');
+				Cufon.replace('h2', { textShadow: '0 2px rgba(0, 0, 0, 0.15)' });
+				Cufon.replace('#social .right a', {hover:true});
+				Cufon.replace('#work .left h3', {hover:true});
+				Cufon.replace('h3', { textShadow: '0 2px rgba(0, 0, 0, 0.15)' });
+				Cufon.replace('#contactinfo'), {hover:true};
+			});
+		</script>
+		
+		<!-- jQuery lightbox -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#work .right a').lightBox();
+			});
+		</script>
+		
+		<!-- Navigation and Content effects -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.page').hide();
+				$('#navigation li:first').addClass('active').show();
+				$('.page:first').show();
+				
+				$('#navigation li').click(function(){
+					$('#navigation li').removeClass('active');
+					$(this).addClass('active');
+					
+					$('.page').hide();
+					var activeTab = $(this).find('a').attr('href');
+					$(activeTab).fadeIn('slow');
+					return false;
+				});
+			});
+		</script>
+<style type="text/css">
+.str_new {
+	
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+	font-size: 15px;
+	line-height: 24px;
+}
+</style>
+	</head>
+	<body>
+		<div id="pagewrap">
+			
+			<div id="header">
+				<ul id="navigation">
+					<li><a class="about" href="#about"><img src="images/icon-about.png" alt="About"></a></li>
+					<li><a class="work" href="#work">work</a></li>
+				</ul>
+			</div>
+			
+
+			<div id="content">
+				<div id="about" class="page">
+					<div class="left">
+						<img src="images/author-photo.png" alt="photo">
+					</div>
+					<div class="right">
+						<h2>About me</h2>
+						<table id="_tab" style="width: 100%;border:1px;">
+							<tr>
+								<td style="text-align:left;width: 20%;"><strong class="str_new">姓&#12288&#12288名：</strong></td><td style="text-align: left;width: 30%;" ><strong class="str_new">邓文康</strong></td>
+								<td style="text-align:right;width:20%;"><strong class="str_new">性&#12288&#12288别：</strong></td><td style="text-align: left;width: 30%;"><strong class="str_new">男</strong></td>
+							</tr>
+                            <tr>
+								<td style="text-align:left;"><strong class="str_new" >毕业学校：</strong></td><td><strong class="str_new">吉林大学</strong></td>
+								<td style="text-align:right;"><strong class="str_new">学&#12288&#12288位：</strong></td><td><strong class="str_new">本科</strong></td>
+							</tr>
+							<tr>
+								<td style="text-align:left;"><strong class="str_new" >联系电话：</strong></td><td><strong class="str_new">186-1072-2018</strong></td>
+								<td style="text-align:right;"><strong class="str_new">个人博客：</strong></td><td><strong class="str_new"><a  target="_blank" href="http://www.comsmp.com">http://www.comsmp.com</strong></td>
+							</tr>
+							<tr>
+							
+							
+							<td colspan="4">
+							<h3>Acquire skills</h3>
+							    <p class="str_new">
+								1.熟练使用Resin、Tomcat、中间件，Jboos使用过<br/>
+								2.熟练使用jquery，使用过javascript面向对象编程<br/>
+								3.熟悉linux相关命令、数据库迁移、国际化方面的工作<br/>
+								4.对分布式文件系统Hadoop有所了解 <br/>
+								5.熟练运用sql server 、oracle 数据库操作，使用过mysql 、postgresql<br/>
+								6.熟练使用编程相关工具，如Eclipse、svn、git、ant、Hudson等<br/>
+								7.使用过struts1/2,spring,hibernate,ibatis等主流框架技术运用及集成开发
+								</p>
+							</td>
+							</tr>
+						</table>
+						<!--div id="contactinfo">
+							<p>Address: China Beijing Changping </p>
+							<p>186-1072-2018</p>
+							<p><a href="mailto:wenkan_g@163.com">wenkan_g@163.com</a></p>
+						</div-->
+					</div>
+				</div>
+
+				<div id="work" class="page">
+					<div class="left">
+						<img src="images/my.jpg"  alt="My" style="width:230px;height:232px;"></a>
+						<h3><a style="cursor:default;">My photo</a></h3>
+						<p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit...</p>
+					</div>
+					<div class="right">
+						<p>Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<h3>Print Design:</h3>
+						<ul id="work01">
+							<li><a href="images/about_01.jpg"><img src="images/about_01.jpg" style="width:80px;height:80px;" alt="logo01"></a></li>
+							<li><a href="images/about_02.jpg"><img src="images/about_02.jpg" style="width:80px;height:80px;" alt="logo02"></a></li>
+							<li><a href="images/image03.jpg"><img src="images/logo03.jpg" style="width:80px;height:80px;" alt="logo03"></a></li>
+							<li><a href="images/image04.jpg"><img src="images/logo04.jpg" style="width:80px;height:80px;" alt="logo04"></a></li>
+						</ul>
+						<h3>Web Design:</h3>
+						<ul id="work02">
+							<li><a href="images/image05.jpg"><img src="images/web01.jpg" style="width:80px;height:80px;" alt="web01"></a></li>
+							<li><a href="images/image06.jpg"><img src="images/web02.jpg" style="width:80px;height:80px;" alt="web02"></a></li>
+							<li><a href="images/image07.jpg"><img src="images/web03.jpg" style="width:80px;height:80px;" alt="web03"></a></li>
+							<li><a href="images/image08.jpg"><img src="images/web04.jpg" style="width:80px;height:80px;" alt="web04"></a></li>
+						</ul>
+					</div>
+				</div>
+		</div>
+			<div id="footer">
+				<p>&copy; Copyright &copy; 2015.All rights reserved.</p>
+			</div>
+		</div>
+</body>
+</html>
