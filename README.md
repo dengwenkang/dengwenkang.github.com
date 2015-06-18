@@ -8,6 +8,6 @@
 * 个人成长经历;
 * 工作的项目介绍;
 * 关于我的个人技能介绍;
-* 生活照片.
+* 生活照片^_^;
 
-Git首页 [http://dengwenkang.github.io](http://dengwenkang.github.io)  博客：[http://www.comsmp.com/](http://www.comsmp.com/)
+Git首页: [http://dengwenkang.github.io](http://dengwenkang.github.io)  博客：[http://www.comsmp.com/](http://www.comsmp.com)
